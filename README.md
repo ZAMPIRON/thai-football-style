@@ -3,7 +3,7 @@
 # 🦴 Estrutra
 - index.html
     - Ajuda
-        ajuda.html
+        - ajuda.html
   
     - Perfil
         - cadastro.html
