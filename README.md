@@ -32,6 +32,11 @@
 
 # Tags html mais utilizadas
 ```html
+<header>
+<footer>
+<a>
+<img>
+<input>
 
 ```
 
