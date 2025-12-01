@@ -66,42 +66,25 @@ p: 24<br>
 
 # Propriedades css mais utilizadaos
 ```css
-display: flex
-
-justify-content
-
-align-items
-
-gap
-
-display: grid
-
-flex-direction
-
-padding
-
-margin
-
-border-radius
-
-border
-
-width / height
-
-max-width
-
-background / background-color
-
-background-size
-
-background-image
-
-font-family
-
-font-size
-
-text-align
-
-opacity
+.mais-utilizados {
+    display: flex
+    justify-content
+    align-items
+    gap
+    display: grid
+    flex-direction
+    padding
+    margin
+    border-radius
+    border
+    max-width
+    background / background-color
+    background-size
+    background-image
+    font-family
+    font-size
+    text-align
+    opacity
+}
 ```
 
