@@ -27,6 +27,19 @@
 
 ## Paleta de cores
 ## Tipografia
+#### Títulos - Goldman
+<p>Forte, tecnológico e impactante, chamar a atenção imediata.</p>
+
+#### Parágrafos - Nunito
+<p>Excelente em tamanhos pequenos devido aos seus terminais arredondados e limpos. Garante uma leitura confortável e acessível, suavizando o design geral.</p>
+<li><ul>
+h1: 96
+h2: 70
+h3: 40
+h4: 23
+small: 15
+p: 24</ul></li>
+
 ## Componentes mais utilizados
 
 
