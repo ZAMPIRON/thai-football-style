@@ -1,8 +1,12 @@
 # Thai Football Style
 
-[Sprint 01](https://www.canva.com/design/DAG3v98UqHY/L9IzaBTVumy1enJghQ6ixg/edit)
+<a href="https://www.canva.com/design/DAG3v98UqHY/L9IzaBTVumy1enJghQ6ixg/edit" target="_blank">
+  Sprint 01
+</a><br><br>
 
-[Sprint 02](https://www.canva.com/design/DAG4-feLXS8/JVKd6vpixGP99GV2nbOk0w/edit)
+<a href="https://www.canva.com/design/DAG4-feLXS8/JVKd6vpixGP99GV2nbOk0w/edit" target="_blank">
+  Sprint 02
+</a>
 
 # Sprint 03
 
