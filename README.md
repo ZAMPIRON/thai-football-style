@@ -88,3 +88,7 @@ p: 24<br>
 }
 ```
 
+# Por que um site universitário?
+<p>Optamos por desenvolver o projeto no estilo de um site universitário porque esse formato oferece uma estrutura muito mais completa e realista para demonstrar as habilidades exigidas na sprint. Diferente de uma landing page, que é limitada e focada em um único objetivo, um site universitário permite trabalhar vários tipos de páginas, navegação complexa, organização de conteúdo e componentes variados. Isso nos deu a oportunidade de aplicar com mais profundidade conceitos de HTML, CSS e lógica de interação, resultando em um produto mais profissional.</p>
+<p>Esse estilo também reflete melhor como sites reais funcionam: menus claros, páginas internas conectadas, identidade visual consistente e responsividade mais elaborada. Além disso, facilita a integração de funcionalidades como formulários, buscas, cards, seções informativas e diferentes layouts, que seriam muito restritos em uma estrutura de página única.</p>
+<p>Portanto, escolher o modelo de site universitário foi a melhor decisão porque ele permite mostrar domínio técnico, boa arquitetura de projeto e uma construção mais completa — alinhando perfeitamente com os objetivos pedagógicos da sprint e com o que o professor espera de um trabalho final.</p>
