@@ -23,6 +23,19 @@
 
 - style.css
 
-# Paleta de cores
+# Componentes
+
+## Paleta de cores
+## Tipografia
+## Componentes mais utilizados
+
+
+# Tags html mais utilizadas
+```html
+
+```
+
+
+# Componentes css mais utilizadaos
 
 
