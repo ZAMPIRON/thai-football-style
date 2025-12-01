@@ -26,6 +26,11 @@
 # Componentes
 
 ## Paleta de cores
+- Cor primária: #20A19F
+- Cor secundária: #2FDBBC
+- Cor de fundo: #8CA78E
+- Cor desativada: #FF0000
+
 ## Tipografia
 #### Títulos - Goldman
 <p>Forte, tecnológico e impactante, chamar a atenção imediata.</p>
@@ -59,6 +64,44 @@ p: 24<br>
 ```
 
 
-# Componentes css mais utilizadaos
+# Propriedades css mais utilizadaos
+```css
+display: flex
 
+justify-content
+
+align-items
+
+gap
+
+display: grid
+
+flex-direction
+
+padding
+
+margin
+
+border-radius
+
+border
+
+width / height
+
+max-width
+
+background / background-color
+
+background-size
+
+background-image
+
+font-family
+
+font-size
+
+text-align
+
+opacity
+```
 
