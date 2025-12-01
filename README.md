@@ -32,13 +32,14 @@
 
 #### Parágrafos - Nunito
 <p>Excelente em tamanhos pequenos devido aos seus terminais arredondados e limpos. Garante uma leitura confortável e acessível, suavizando o design geral.</p>
-<li><ul>
-h1: 96
-h2: 70
-h3: 40
-h4: 23
-small: 15
-p: 24</ul></li>
+<p>
+h1: 96<br>
+h2: 70<br>
+h3: 40<br>
+h4: 23<br>
+small: 15<br>
+p: 24<br>
+</p>
 
 ## Componentes mais utilizados
 
