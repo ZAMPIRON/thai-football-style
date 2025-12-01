@@ -22,7 +22,7 @@
             - comprar.html
 
 - style.css
-
+---
 # Componentes
 
 ## Paleta de cores
@@ -42,7 +42,11 @@ p: 24<br>
 </p>
 
 ## Componentes mais utilizados
-
+- Botôes
+- Formulários
+- Cabeçalhos
+- Rodapé
+---
 
 # Tags html mais utilizadas
 ```html
