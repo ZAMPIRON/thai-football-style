@@ -1,38 +1,15 @@
-* {
+* { /*reset*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
-}
+    font-family: "Nunito", sans-serif; /*fonte geral*/
+} 
 body{
-    background-color: #8CA78E;
-    margin-left: 130px;
-    margin-right: 130px;
+    background-color: #8CA78E; /*cor de fundo*/
+    margin-left: 130px; /*margem da esquerda*/
+    margin-right: 130px; /*margem da direita*/
 }
-.imagem_fundo {
-    background-image: url('assets/imagem\ fundo\ thailandia.jpg');
-    height: 100vh;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.imagem_fundo1 {
-    background-image: url('assets/imagem\ fundo\ thailandia1.jpg');
-    height: 100vh;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
+/* Fontes específicas */
 .goldman {
     font-family: "Goldman", sans-serif;
 }
@@ -40,24 +17,107 @@ body{
     font-family: "Nunito", sans-serif;
 }
 
+/* Estilo padrão para títulos principais */
+.titulo {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-family: Goldman;
+    font-size: 96px;
+}
+
+/* Texto padrão */
+.texto{
+    font-family: Nunito;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* ------------------------ CABEÇALHO ------------------------ */
 header {
-    background: #EDE1D0;
+    background: #EDE1D0;                /* Cor de fundo */
     padding: 20px 0;
-    margin-left: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);        /* Remove margens laterais definidas no body */
     margin-right: calc(50% - 50vw);
 }
 
+/* Tamanho do logo */
+.logo {
+    width: 137px;
+    cursor: pointer;
+}
 .cabecalho {
     max-width: 1440px;
     height: 159px;
     margin: auto;
     padding: 0 150px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Caixa de busca */
+.search-box {
+    background: #2BA59F;
+    width: 298px;
+    height: 46px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 10px;
+}
+
+/* Campo de texto da pesquisa */
+.search-box input {
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    width: 100%;
+}
+.icons a {
+    font-size: 40px;       /* Define o tamanho dos ícones */
+    color: inherit;        /* Faz o link herdar a cor do elemento pai (.icons) */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+.icons {
+    display: flex;          /* Organiza os ícones em linha usando Flexbox */
+    align-items: center;    /* Alinha verticalmente os ícones ao centro */
+    gap: 35px;              /* Define espaçamento horizontal entre cada ícone */
+    color: #2BA59F;       /* Define a cor padrão aplicada aos ícones */
+    cursor: pointer;        /* Altera o cursor para indicar que os ícones são clicáveis */
+}
+
+/*------------------------------------PARALLAX-----------------------------------*/
+.imagem_fundo {
+    background-image: url('assets/imagem\ fundo\ thailandia.jpg');
+    height: 100vh; /*define a altura em 100% da tela*/
+    width: 100vw; /*define a largura em 100% da tela*/
+    margin-left: calc(50% - 50vw); /*quebra as margens definidas no body*/
+    margin-right: calc(50% - 50vw); /*quebra as margens definidas no body*/
+    background-attachment: fixed; /*imagem fixada*/
+    background-position: center; /*flex-box*/
+    background-repeat: no-repeat; /*flex-box*/
+    background-size: cover;
+    position: relative; /*flex-box*/
+}
+.imagem_fundo1 {
+    background-image: url('assets/imagem\ fundo\ thailandia1.jpg');
+    height: 100vh; /*define a altura em 100% da tela*/
+    width: 100vw; /*define a largura em 100% da tela*/
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-attachment: fixed; /*imagem fixada*/
+    background-position: center; /*flex-box*/
+    background-repeat: no-repeat; /*flex-box*/
+    background-size: cover;
+    position: relative; /*flex-box*/
+}
+/*------------------------------------------------------------------------------------*/
+/*texto do sobre nós*/
 .about_titulo{
     font-family: Goldman;
     font-size: 40px;
@@ -80,88 +140,8 @@ header {
     align-items: center;
     margin-bottom: 56px;
 } 
-
-.logo {
-    width: 137px;
-    cursor: pointer;
-}
-.texto{
-    font-family: Nunito;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-.titulo_ajuda_principal{
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    font-family: Goldman;
-    font-size: 70px;
-}
-.search-box {
-    background: #2BA59F;
-    width: 298px;
-    height: 46px;
-    border-radius: 20px;
-
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    gap: 10px;
-}
-
-.search-box input {
-    border: none;
-    outline: none;
-    background: none;
-    color: #fff;
-    width: 100%;
-}
-.icons a {
-    font-size: 40px;
-    color: inherit;
-    text-decoration: none;
-}
-.icons {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    color: #2BA59F;
-    cursor: pointer;
-}
-
-.imagem {
-    position: relative;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    background-attachment: fixed;   
-    background-position: center;    
-    background-repeat: no-repeat;  
-    background-size: cover;     
-}
-
-.titulo {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    font-family: Goldman;
-    font-size: 96px;
-}
-
-.detalhes {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 80px 0;
-}
-
-.img-camisa {
-    background: #EEE1D1;
-    border-radius: 40px;
-    height: 350px;
-    width: 230px;
-}
-
+/*---------------------------------------------------------*/
+/*-----------------------FOOTER---------------------*/
 .footer {
     background: #121212;
     color: #dcdcdc;
@@ -171,7 +151,7 @@ header {
 }
 
 .footer-top {
-    display: flex;
+    display: flex;                    /**/
     justify-content: space-between;
     margin-bottom: 40px;
 }
@@ -190,7 +170,7 @@ header {
     color: white;
 }
 
-.pagar_ {
+.pagar1 {
     margin-left: 9px;
 }
 
@@ -199,7 +179,7 @@ header {
     height: 100px;
 }
 
-.redes_ {
+.redes1 {
     margin-left: 9px;
 }
 
@@ -214,263 +194,16 @@ header {
     border-top: 1px solid #000;
     padding-top: 65px;
 }
-.cadastro {
-    display: flex;
-    background-color: #8CA78E;
-    color: #000000;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 230px;
 
-}
-
-
-
-.icon-text {
-    display: flex;
-    flex-direction: column;
-    font-size: 40px;
-    font-weight: bold;
-    gap: 20px;
-    border-radius: 20px;
-}
-
-.possuiconta {
-    display: inline;
-    color: #00C8FF;
-
-}
-
-input {
-    display: block;
-}
-
-.criar-btn {
-    font-family: Goldman;
-    font-size: 20px;
-    width: 250px;
-    background-color: #2FDBBC;
-    border-color: #2FDBBC;
-    color: white;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
+/*--------------------------------------------------------------*/
+/*---------------------AJUDA.HTML--------------------*/
+.titulo_ajuda_principal{
     text-align: center;
-    text-decoration: none;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-}
-
-.perfil {
-    background-color: transparent;
-    color: #000000;
-    font-size: 300px;
-    padding-right: 100px;
-}
-
-.texto_conta {
-    width: 250px;
-    background-color: #85FFE9;
-    border-color: #85FFE9;
-    color: rgb(91, 22, 22);
-    border-radius: 5px;
-    padding: 6px;
-    border: none;
-}
-
-.h2 {
-    font-size: 50px;
-    font-weight: bold;
+    margin: 0 auto;
+    display: block;
     font-family: Goldman;
-    margin-bottom: 30px;
+    font-size: 70px;
 }
-
-.hr1 {
-    margin-top: 120px;
-    height: 1px; 
-    border: none;
-    background: linear-gradient(to right,#8CA78E 0%,#727770 50%,#8CA78E 100%);
-}
-
-.hr2 {
-    margin-bottom: 150px;
-    height: 1px; 
-    border: none;
-    background: linear-gradient(to right,#8CA78E 0%,#727770 50%,#8CA78E 100%);
-}
-
-.linha {
-    width: 90%;
-    height: 1px;
-    background-color: rgba(0,0,0,0.2);
-    margin: 10px auto 40px;
-}
-
-.container {
-    display: flex;
-    gap: 40px;
-    margin-left: 60px;
-    align-items: flex-start;
-}
-
-.card-img {
-    background: #C9C4A8;
-    border-radius: 20px;
-    width: 367px;
-    display: flex;
-    justify-content: center;
-    height: 558.38px;
-    margin-left: 75px;
-}
-
-.card-img img {
-    width: 90%;
-    border-radius: 10px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    padding-top: 50px;
-    font-family: "Nunito", sans-serif;
-}
-
-
-.preco {
-    font-size: 50px;
-    margin-top: 89px;
-    color: white;
-}
-
-select {
-    margin-top: 48px;
-    padding: 10px 20px;
-    width: 450px;
-    background-color: #85FFE9;
-    border-radius: 15px;
-    border: none;
-    font-size: 33px;
-    cursor: pointer;
-    color: white;   
-}   
-
-
-.botao {
-    margin-top: 60px;
-    background-color: #2FDBBC;
-    border: none;
-    padding: 12px;
-    width: 450px;
-    color: white;
-    font-size: 33px;
-    border-radius: 15px;
-    cursor: pointer;
-    color: white;
-}
-
-.favoritar {
-    margin-top: 18px;
-    display: flex;
-    cursor: pointer;
-    opacity: 0.5;
-    color: white;
-    font-size: 100px;
-}
-
-.botao_fav {
-    font-size: 33px;
-    margin-left: 143px;
-}
-
-.texto_ajuda {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Nunito;
-    font-size: 20px;
-}
-
-.cabecalho {
-    width: 100%;
-    height: 159px;
-    max-width: 1440px;
-    margin: auto;
-    padding: 0 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 137px;
-}
-
-.search-box {
-    background: #2BA59F;
-    width: 297.72px;
-    height: 45.89px;
-    border-radius: 20px;
-
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    gap: 10px;
-}
-
-.search-box input {
-    border: none;
-    background: none;
-    outline: none;
-    color: white;
-    width: 100%;
-}
-                                    
-.search-icon {
-    width: 18px;
-}
-
-.icons {
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    color: #2BA59F;
-}
-
-.camisadetalhe {
-    background: #EEE1D1;   
-    border-radius: 40px;
-    width: 230px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.img-camisa {
-    width: 180px;
-    height: auto;
-}
-
-.btn-comprar {
-    background-color: #8CA78E;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-comprar:hover {
-    background-color: #6f8a70;
-}
-/*AJUDA*/
 .top-boxes {
     display: flex;
     justify-content: center;
@@ -492,7 +225,6 @@ select {
     margin: 0;
     font-size: 22px;
 }
-
 .texto_ajuda {
     margin: 0;
     font-size: 18px;
@@ -505,7 +237,6 @@ select {
     justify-content: center;
     margin-bottom: 60px;
 }
-
 .grid-ajuda .box-ajuda {
     width: 260px;
 }
@@ -523,7 +254,124 @@ select {
     justify-content: center; 
     margin-bottom: 104px;
 }
-/* Produtos */
+/*------------------------------------------------------------*/
+/*----------CADASTRO.HTML/LOGIN.HTML---------------*/
+.botao-logar {
+    font-family: "Goldman", sans-serif;
+    font-size: 20px;
+    width: 250px;
+    background-color: #2FDBBC;
+    border-color: #2FDBBC;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.hr2 {
+    margin-bottom: 150px;
+    height: 1px; 
+    border: none;
+    background: linear-gradient(to right,#8CA78E 0%,#727770 50%,#8CA78E 100%);
+}
+.cadastro {
+    display: flex;
+    background-color: #8CA78E;
+    color: #000000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 230px;
+
+}
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bold;
+    gap: 20px;
+    border-radius: 20px;
+}
+.possuiconta {
+    display: inline;
+    color: #00C8FF;
+}
+
+input {
+    display: block;
+}
+
+.criar-btn {
+    font-family: "Goldman", sans-serif;
+    font-size: 20px;
+    width: 300px;
+    background-color: #2FDBBC;
+    border-color: #2FDBBC;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.perfil {
+    background-color: transparent;
+    color: #000000;
+    font-size: 300px;
+    margin-left: -50px;
+    padding-right: 100px;
+}
+
+.texto_conta {
+    width: 250px;
+    background-color: #85FFE9;
+    border-color: #85FFE9;
+    color: rgb(91, 22, 22);
+    border-radius: 5px;
+    padding: 6px;
+    border: none;
+}
+
+.h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Goldman", sans-serif;
+    margin-bottom: 30px;
+    margin-right: -100px;
+    margin-left: -100px;
+}
+.h2_ {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Goldman", sans-serif;
+    margin-bottom: 30px;
+    margin-right: -100px;
+    margin-left: -20px;
+}
+
+.hr1 {
+    margin-top: 120px;
+    height: 1px; 
+    border: none;
+    background: linear-gradient(to right,#8CA78E 0%,#727770 50%,#8CA78E 100%);
+}
+
+.hr2 {
+    margin-bottom: 150px;
+    height: 1px; 
+    border: none;
+    background: linear-gradient(to right,#8CA78E 0%,#727770 50%,#8CA78E 100%);
+}
+
+/*-----------------------------------------*/
+/* ------------------------ PRODUTOS ------------------------ */
 h1 {
     font-family: "Goldman", sans-serif;
 }
@@ -579,7 +427,7 @@ h1 {
     margin-left: 40px;
 }
 
-
+/* Preços */
 .preco {
     display: inline;
     background-color: transparent;
@@ -592,6 +440,7 @@ h1 {
     margin-top: 20px;
 }
 
+/* Preço antes do desconto */
 .preco2 {
     display: inline;
     background-color: transparent;
@@ -604,6 +453,7 @@ h1 {
     margin-right: 120px;
 }
 
+/* Desconto */
 .desconto {
     background-color: #21A360;
     color: white;
@@ -616,6 +466,8 @@ h1 {
     margin-top: -60px;
     margin-bottom: 10px;
 }
+
+/* Botão comprar */
 .comprar-btn {
     background-color: #8CA78E;
     color: white;
@@ -634,72 +486,74 @@ h1 {
 
 
 .produto1 img {
-    max-height: 300px; 
-    width: auto;
+    max-height: 300px;    /* Define uma altura máxima para a imagem */
+    width: auto;          /* Mantém a proporção original da imagem */
 }
 
 
 
 .produto3 img {
-    max-height: 250px; 
-    width: auto;
-    margin-top: -30px;
+    max-height: 250px;    /* Define uma altura máxima para a imagem */
+    width: auto;          /* Mantém a proporção original da imagem */
+    margin-top: -30px;    /* Move a imagem para cima */
 }
 
 .produto4 img {
-    max-height: 350px; 
-    width: auto;
-    margin-bottom: -30px;
+    max-height: 350px;    /* Define uma altura máxima para a imagem */
+    width: auto;          /* Mantém a proporção original da imagem */
+    margin-bottom: -30px; /* Move a imagem para baixo */
 }
+
 
 .imgcamisa {
-    width: 200px;       
-    height: 200px;     
-    object-fit: cover;  
-    border-radius: 20px;
+    width: 200px;        /* Largura fixa da imagem */
+    height: 200px;       /* Altura fixa da imagem */
+    object-fit: cover;   /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
+    border-radius: 20px; /* Deixa as bordas arredondadas */
 }
 
+
 .imgcamisa1 {
-    width: 240px;      
-    height: 290px;      
-    object-fit: cover; 
-    margin-top: -20px;
+    width: 240px;      /* Largura fixa da imagem */
+    height: 290px;     /* Altura fixa da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
+    margin-top: -20px; /* Deixa as bordas arredondadas */
 }
 
 .imgcamisa2 {
-    width: 240px;      
-    height: 290px;      
-    object-fit: cover; 
-    margin-top: -30px;
+    width: 240px;      /* Largura fixa da imagem */
+    height: 290px;     /* Altura fixa da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
+    margin-top: -30px; /* Deixa as bordas arredondadas */
 }
 
 .imgcamisa3 {
-    width: 240px;      
-    height: 260px;      
-    object-fit: cover; 
-    margin-top: -30px;
+    width: 240px;      /* Largura fixa da imagem */
+    height: 260px;     /* Altura fixa da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
+    margin-top: -30px; /* Deixa as bordas arredondadas */
 }
 
 .imgcamisa6 {
-    width: 240px;      
-    height: 260px;      
-    object-fit: cover; 
-    margin-top: -40px;
+    width: 240px;      /* Largura fixa da imagem */
+    height: 260px;     /* Altura fixa da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
+    margin-top: -40px; /* Deixa as bordas arredondadas */
 }
 
 .imgcamisa8 {
-    width: 260px;      
-    height: 220px;      
-    object-fit: cover; 
+    width: 260px;      /* Largura fixa da imagem */
+    height: 220px;     /* Altura fixa da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
 }
 
 .imgcamisa7 {
-    width: 240px;      
-    height: 260px;      
-    object-fit: cover; 
+    width: 240px;      /* Largura fixa da imagem */
+    height: 260px;     /* Altura fixa da imagem */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
 }
 
-
+/* Produtos */
 .produto1, .produto2 {
     width: 250px;
     height: 390px;
@@ -775,21 +629,270 @@ h1 {
     border: none;
     margin-top: 40px;
 }
-.opcao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-    padding: 20px;
-    background: #85FFE9;
-    opacity: 60%;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+.comprar-btn00 {
+    background-color: #8CA78E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    margin-top: 27px;
 }
 
-/* ------------------------- PARTE DO JOHN ------------------------- */
+/* Opções que auxiliam na pesquisa */
+.opcao {
+    margin-bottom: 100px;
+}
+
+/*---------------------------------------*/
+/*----------CAMISAS-COMPRA-------------*/
+.imagem {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-attachment: fixed;   
+    background-position: center;    
+    background-repeat: no-repeat;  
+    background-size: cover;     
+}
+
+.detalhes {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 0;
+}
+
+.img-camisa {
+    background: #EEE1D1;
+    border-radius: 40px;
+    height: 350px;
+    width: 230px;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bold;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+input {
+    display: block;
+}
+
+.linha {
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 10px auto 40px;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    margin-left: 60px;
+    align-items: flex-start;
+}
+
+.card-img {
+    background: #C9C4A8;
+    border-radius: 20px;
+    width: 367px;
+    display: flex;
+    justify-content: center;
+    height: 558.38px;
+    margin-left: 75px;
+}
+
+.card-img img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 50px;
+    font-family: "Nunito", sans-serif;
+}
 
 
+select {
+    margin-top: 48px;
+    padding: 10px 20px;
+    width: 450px;
+    background-color: #85FFE9;
+    border-radius: 15px;
+    border: none;
+    font-size: 33px;
+    cursor: pointer;
+    color: white;   
+}   
+
+
+.botao {
+    margin-top: 60px;
+    background-color: #2FDBBC;
+    border: none;
+    padding: 12px;
+    width: 450px;
+    color: white;
+    font-size: 33px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Favoritar uma camisa */
+.favoritar {
+    margin-top: 18px;
+    display: flex;
+    cursor: pointer;
+    opacity: 0.5;
+    color: white;
+    font-size: 100px;
+}
+/* Botão de favoritar */
+.botao_fav {
+    font-size: 33px;
+    margin-left: 143px;
+}
+.camisadetalhe {
+    background: #EEE1D1;   
+    border-radius: 40px;
+    width: 230px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.img-camisa {
+    width: 180px;
+    height: auto;
+}
+.btn-comprar {
+    background-color: #8CA78E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-comprar:hover {
+    background-color: #6f8a70;
+}
+
+/* Título de compra */
+.tcompra {
+    font-size: 70px;
+    padding-top: 133px;
+    padding-left: 140px;
+    margin-bottom: 20px;
+}
+.Compra {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    padding-left: 140px;
+    padding-bottom: 150px;
+}
+
+/* Foto da camisa */
+.camisaproduto {
+    width: 300px;
+    height: 450px;
+    background: #EEE1D1;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Área onde fica os elementos para comprar a camisa */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.h2__ {
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+    margin-top: 80px;
+}
+.texto_conta {
+    width: 300px;
+}
+.tamanho {
+    font-size: 20px;
+    height: 40px;
+    width: 320px;
+    border-radius: 10px;
+}
+.btn-comprar__ {
+    background-color: #2FDBBC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
+.precocamisa {
+    color: #818480;
+}
+/*----------------OBRIGADO.HTML--------------------*/
+/* Mensagem de agradecimento */
+.comprado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center; 
+    text-align: center;   
+    margin-top: 80px;
+    gap: 10px;
+}
+.mensagem-compra {
+    font-size: 16px;
+    color: #555;
+    align-items: center;   
+    justify-content: center; 
+    text-align: center;
+    display: block;
+    margin-top: 43px;
+    margin-bottom: 149px;
+}
+
+/* Opção de voltar para a tela principal*/
+.voltar_ini {
+    margin-top: 15px;
+    background-color: #2FDBBC;
+    padding: 12px 20px;
+    color: white;
+    align-items: center;   
+    justify-content: center; 
+    text-align: center; 
+    border-radius: 12px;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 200px;
+    display: block;
+}
+.voltar_ini:hover { 
+    background-color: #3dceb3; 
+}
+/*-----------------------------------------------*/
 .tcompra {
     font-size: 70px;
     padding-top: 133px;
@@ -844,57 +947,39 @@ h1 {
 .btn-comprar__ {
     background-color: #2FDBBC;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
     border: none;
+    text-align: center;
 }
 
-.precocamisa {
+.precocompra {
     color: #818480;
 }
 
-.comprado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-    justify-content: center; 
-    text-align: center;   
-    margin-top: 80px;
-    gap: 10px;
-}
-
-
-.mensagem-compra {
-    font-size: 16px;
-    color: #555;
-    align-items: center;   
-    justify-content: center; 
-    text-align: center;
-    display: block;
-    margin-top: 43px;
-    margin-bottom: 149px;
-}
-
-
-.voltar_ini {
-    margin-top: 15px;
-    background-color: #2FDBBC;
-    padding: 12px 20px;
-    color: white;
-    align-items: center;   
-    justify-content: center; 
-    text-align: center; 
-    border-radius: 12px;
-    display: inline-block;
+.favoritar__ a {
+    color: #7d807d;
+    font-size: 21.5px;
+    padding-left: 100px;
     text-decoration: none;
-    margin-bottom: 200px;
-    display: block;
+    font-style: normal;
 }
 
-.voltar_ini:hover {
-    
-    background-color: #3dceb3;
-   
+.favoritar_ {
+    margin-left: 5px;
 }
+
+.favoritado {
+    color: #e81515 !important;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.favoritar-btn {
+    color: #7d807d;
+    font-size: 22px;
+    text-decoration: none;
+}
+
