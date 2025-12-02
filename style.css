@@ -151,27 +151,27 @@ header {
 }
 
 .footer-top {
-    display: flex;                    /**/
-    justify-content: space-between;
-    margin-bottom: 40px;
+    display: flex;                    /* FLEXBOX */
+    justify-content: space-between;   /* Distribui os itens nas extremidades e o espaço no meio */
+    margin-bottom: 40px;              /* Adiciona um espaço abaixo do elemento */
 }
 
 .coluna h3 {
-    margin-bottom: 15px;
+    margin-bottom: 15px;              /* Adiciona um espaço abaixo do elemento */
 }
 
 .coluna a {
-    display: block;
-    margin-bottom: 8px;
+    display: block;                   /* Faz o texto se comportar como um bloco*/
+    margin-bottom: 8px;               /* Adiciona um espaço abaixo do elemento */
     color: #c0c0c0;
-    text-decoration: none;
+    text-decoration: none;            /* Remove o sublinhado padrão dos links */
 }
 .coluna a:hover {
     color: white;
 }
 
 .pagar1 {
-    margin-left: 9px;
+    margin-left: 9px;                 /* Adiciona um espaço a esquerda do elemento */
 }
 
 .pagar {
@@ -180,7 +180,7 @@ header {
 }
 
 .redes1 {
-    margin-left: 9px;
+    margin-left: 9px;                 /* Adiciona um espaço a esquerda do elemento */
 }
 
 .redes {
@@ -189,17 +189,17 @@ header {
 }
 
 .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #000;
-    padding-top: 65px;
+    display: flex;                   /* Ativa o Flexbox para alinhamento */
+    justify-content: space-between;  /* Distribui os itens nas extremidades e o espaço no meio */
+    border-top: 1px solid #000;    /* Define uma borda superior */
+    padding-top: 65px;               /* Adiciona 65 pixels de espaçamento interno no topo do elemento */
 }
 
 /*--------------------------------------------------------------*/
 /*---------------------AJUDA.HTML--------------------*/
 .titulo_ajuda_principal{
-    text-align: center;
-    margin: 0 auto;
+    text-align: center;              /* Centraliza o texto dentro do elemento */
+    margin: 0 auto;                  /* Define margens horizontais automáticas, centralizando o bloco inteiro */
     display: block;
     font-family: Goldman;
     font-size: 70px;
